@@ -12,23 +12,23 @@
     "watch": "nodemon --exec babel-node -- server.js"
   },
   "dependencies": {
-    "alt": "^0.17.1",
-    "async": "^1.4.0",
-    "babel": "^5.6.23",
-    "body-parser": "^1.13.2",
-    "colors": "^1.1.2",
-    "compression": "^1.5.1",
-    "express": "^4.13.1",
-    "mongoose": "^4.0.7",
-    "morgan": "^1.6.1",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3",
-    "request": "^2.58.0",
-    "serve-favicon": "^2.3.0",
-    "socket.io": "^1.3.6",
-    "swig": "^1.4.2",
-    "underscore": "^1.8.3",
-    "xml2js": "^0.4.9"
+    "alt": "^0.17.1",                    //React的Flux实现
+    "async": "^1.4.0",                   //异步流程控制
+    "babel": "^5.6.23",                  //ES6转换为ES5
+    "body-parser": "^1.13.2",            //渲染POST请求数据
+    "colors": "^1.1.2",                  //美化控制台输出结果
+    "compression": "^1.5.1",             //Gzip压缩
+    "express": "^4.13.1",                //Node.js Web框架
+    "mongoose": "^4.0.7",                //MongoDB ODM
+    "morgan": "^1.6.1",                  //HTTP请求日志
+    "react": "^0.13.3",                  //React框架
+    "react-router": "^0.13.3",           //React路由库
+    "request": "^2.58.0",                //HTTP请求库
+    "serve-favicon": "^2.3.0",           //提供favicon.png
+    "socket.io": "^1.3.6",               //node.js实时框架
+    "swig": "^1.4.2",                    //渲染HTML
+    "underscore": "^1.8.3",              //JS辅助库
+    "xml2js": "^0.4.9"                   //将XML渲染为JSON
   },
   "devDependencies": {
     "babelify": "^6.1.3",
