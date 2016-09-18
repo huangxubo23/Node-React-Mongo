@@ -4,11 +4,11 @@ class AddCharacterActions {
     constructor() {
         this.generateActions(
             'addCharacterSuccess',
-            'addCharactersFail',
+            'addCharacterFail',
             'updateName',
-            'update Gender',
-            'invaildName',
-            'InvalidGender'
+            'updateGender',
+            'invalidName',
+            'invalidGender'
         )
     }
 
@@ -21,8 +21,8 @@ class AddCharacterActions {
             .done((data) => {
                 this.actions.addCharacterSuccess(data.message);
             })
-            .fail((jqxhr) => {
-                this.actions.addCharacterFail(jqxhr.response.message);
+            .fail((jqXhr) => {
+                this.actions.addCharacterFail(jqXhr.responseJSON.message);
             });
     }
 }

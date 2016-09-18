@@ -27,7 +27,7 @@ class AddCharacter extends React.Component {
         event.preventDefault();
 
         var name = this.state.name.trim();
-        var gender = this.state.genter;
+        var gender = this.state.gender;
 
         if (!name) {
             AddCharacterActions.invalidName();
