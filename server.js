@@ -3,6 +3,10 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
+var config = require('./config');
+var mongoose = require('mongoose');
+var Character = require('./models/character');
+
 var swig = require('swig');
 var React = require('react');
 var Router = require('react-router');
@@ -27,6 +31,14 @@ app.use(function (req, res) {
 // app.listen(app.get('port'), function() {
 //   console.log('Express server listening on port ' + app.get('port'));
 // });
+
+/*
+ * Database:MogoDB
+ */
+mongoose.connect(config.database);
+mongoose.connection.on('error', function() {
+  console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
+});
 
 /**
  * Socket.io stuff.
