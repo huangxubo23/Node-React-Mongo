@@ -10,9 +10,9 @@ var characterSchema = new mongoose.Schema({
     race: String,
     gender: String,
     bloodline: String,
-    wins: { type: String, default:0 },
+    wins: { type: Number, default: 0 },
     losses: { type: Number, default: 0 },
-    reports: { type: Number, default: 0},
+    reports: { type: Number, default: 0 },
     random: { type: [Number], index: '2d'},
     voted: { type: Boolean, default: false }
 });
@@ -21,4 +21,4 @@ var characterSchema = new mongoose.Schema({
  * 和抽象的模式相比，一个模型（model）是和实践更接近的对象，包含添加、删除、查询、更新数据的方法，
  * 我们创建了一个Character模型并将它暴露出来。
  */
-module.exports = mongoose.module('Character', characterSchema);
+module.exports = mongoose.model('Character', characterSchema);

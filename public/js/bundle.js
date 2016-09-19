@@ -29,7 +29,7 @@ var AddCharacterActions = (function () {
 
             $.ajax({
                 type: 'POST',
-                url: '/api/cbaracters',
+                url: '/api/characters',
                 data: { name: name, gender: gender }
             }).done(function (data) {
                 _this.actions.addCharacterSuccess(data.message);
