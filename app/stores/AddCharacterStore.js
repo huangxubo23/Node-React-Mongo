@@ -12,7 +12,7 @@ class AddCharacterStore {
     }
 
     onAddCharacterSuccess(successMessage) {
-        this.nameValidationState = 'has-sucess';
+        this.nameValidationState = 'has-success';
         this.helpBlock = successMessage;
     }
 

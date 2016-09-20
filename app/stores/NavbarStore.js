@@ -11,7 +11,7 @@ class NavbarStore {
     }
 
     onFindCharacterSuccess(payload) {
-        payload.router.transitonTo('/characters/' + payload.characterId);
+        payload.router.transitionTo('/characters/' + payload.characterId);
     }
 
     onFindCharacterFail(payload) {

@@ -13,7 +13,7 @@ class CharacterListActions {
         let params = {
             race: payload.race,
             bloodline: payload.bloodline
-        }
+        };
 
         if (payload.category === 'female') {
             params.gender = 'female';

@@ -6,7 +6,7 @@ class HomeActions {
             'getTwoCharactersSuccess',
             'getTwoCharactersFail',
             'voteFail'
-        )
+        );
     }
 
     getTwoCharacters() {

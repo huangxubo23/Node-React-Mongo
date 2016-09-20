@@ -191,7 +191,7 @@ var FooterActions = (function () {
         value: function getTopCharacters() {
             var _this = this;
 
-            $.ajax({ url: 'api/characters/top' }).done(function (data) {
+            $.ajax({ url: '/api/characters/top' }).done(function (data) {
                 _this.actions.getTopCharactersSuccess(data);
             }).fail(function (jqXhr) {
                 _this.actions.getTopCharactersFail(jqXhr);
@@ -2437,7 +2437,7 @@ var AddCharacterStore = (function () {
     _createClass(AddCharacterStore, [{
         key: 'onAddCharacterSuccess',
         value: function onAddCharacterSuccess(successMessage) {
-            this.nameValidationState = 'has-sucess';
+            this.nameValidationState = 'has-success';
             this.helpBlock = successMessage;
         }
     }, {
@@ -2573,7 +2573,7 @@ var CharacterStore = (function () {
             var reports = localData.reports || [];
             this.isReported = (0, _underscore.contains)(reports, this.characterId);
             // If is NaN (from division by zero) then set it to "0"
-            this.winLossRatio = (this.wins / (this.wins + this.lossed) * 100 || 0).toFixed(1);
+            this.winLossRatio = (this.wins / (this.wins + this.losses) * 100 || 0).toFixed(1);
         }
     }, {
         key: 'onGetCharacterFail',
@@ -2591,9 +2591,9 @@ var CharacterStore = (function () {
             toastr.warning('Character has been reported.');
         }
     }, {
-        key: 'onGetCharacterFail',
-        value: function onGetCharacterFail(jqXhr) {
-            toastr.error(jqXhr.reponseJSON.message);
+        key: 'onReportFail',
+        value: function onReportFail(jqXhr) {
+            toastr.error(jqXhr.responseJSON.message);
         }
     }]);
 
@@ -2739,7 +2739,7 @@ var NavbarStore = (function () {
     _createClass(NavbarStore, [{
         key: 'onFindCharacterSuccess',
         value: function onFindCharacterSuccess(payload) {
-            payload.router.transitonTo('/characters/' + payload.characterId);
+            payload.router.transitionTo('/characters/' + payload.characterId);
         }
     }, {
         key: 'onFindCharacterFail',

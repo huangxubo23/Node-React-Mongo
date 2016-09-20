@@ -9,7 +9,7 @@ class AddCharacterActions {
             'updateGender',
             'invalidName',
             'invalidGender'
-        )
+        );
     }
 
     addCharacter(name, gender) {
