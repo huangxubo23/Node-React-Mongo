@@ -125,9 +125,10 @@ app.get('/api/characters/top', function (req, res, next) {
   });
 
   Character
-    .find(conditions)
-    .sort('-wins')  // Sort in descending order (highest wins on top)
-    .limit(100)
+    //.find(conditions)
+    .find()
+    //.sort('-wins')  // Sort in descending order (highest wins on top)
+    //.limit(100)
     .exec(function (err, characters) {
       if (err) return next(err);
 
@@ -141,6 +142,8 @@ app.get('/api/characters/top', function (req, res, next) {
         }
         return 0;
       });
+
+      res.send(characters);
     });
 });
 
