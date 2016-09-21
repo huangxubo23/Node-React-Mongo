@@ -5,6 +5,8 @@ This project is powered by Node.js, Socket.io, MongoDB and React with Flux archi
 
 这个项目使用Node.js，Socket.io，MongoDB，React，Flux技术构建，并使用服务器端来渲染页面。
 
+[Demo](https://huangxubo23nodereact.herokuapp.com/)
+
 ![Node-React-Mongo](https://github.com/huangxubo23/Node-React-Mongo/blob/master/Screenshot.png)
 
 ## Install
