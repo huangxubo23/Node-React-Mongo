@@ -1,9 +1,11 @@
 # Node-React-Mongo
 
 ## Overview
-This project is powered by Node.js, MongoDB and React with Flux architecture and server-side rendering.
+This project is powered by Node.js, Socket.io, MongoDB and React with Flux architecture and server-side rendering.
 
-这个项目使用Node.js，MongoDB，React，Flux技术构建，并使用服务器端来渲染页面。
+这个项目使用Node.js，Socket.io，MongoDB，React，Flux技术构建，并使用服务器端来渲染页面。
+
+![Node-React-Mongo](https://github.com/huangxubo23/Node-React-Mongo/blob/master/Screenshot.png)
 
 ## Install
 Use the following command line to install the dependencies of this project:
@@ -27,7 +29,7 @@ After the Node server has been started, we can visit the website through this Ur
 ## Develop
 In develop environment, use the following two command lines to start the automatic compilation features:
 
-在开发的时候，可以使用下面两句命令行启动自动编译功能：
+在开发的时候，分别使用下面两句命令行启动自动编译功能：
 
 `npm run dev`
 
