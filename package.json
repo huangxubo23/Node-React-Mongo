@@ -10,7 +10,9 @@
   "scripts": {
     "start": "babel-node server.js",
     "watch": "nodemon --exec babel-node -- server.js",
-    "build": "gulp default"
+    "dev": "gulp default",
+    "build": "gulp build",
+    "postinstall": "gulp build"
   },
   "dependencies": {
     "alt": "^0.17.1",

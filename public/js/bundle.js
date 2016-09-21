@@ -1109,7 +1109,7 @@ var Footer = (function (_React$Component) {
                 'You may view the ',
                 _react2['default'].createElement(
                   'a',
-                  { href: 'https://github.com/sahat/newedenfaces-react' },
+                  { target: '_blank', href: 'https://github.com/huangxubo23/Node-React-Mongo' },
                   'Source Code'
                 ),
                 ' behind this project on GitHub.'
@@ -1117,7 +1117,7 @@ var Footer = (function (_React$Component) {
               _react2['default'].createElement(
                 'p',
                 null,
-                '© 2015 Sahat Yalkabov.'
+                '© 2016 Harry Huang.'
               )
             ),
             _react2['default'].createElement(

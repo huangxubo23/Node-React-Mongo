@@ -23,7 +23,7 @@ var app = express();
  */
 mongoose.connect(config.database);
 mongoose.connection.on('error', function () {
-  console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?'.red);
+  console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?');
 });
 
 app.set('port', process.env.PORT || 3001);
