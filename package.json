@@ -11,8 +11,7 @@
     "start": "babel-node server.js",
     "watch": "nodemon --exec babel-node -- server.js",
     "dev": "gulp default",
-    "build": "gulp build",
-    "postinstall": "gulp build"
+    "build": "gulp build"
   },
   "dependencies": {
     "alt": "^0.17.1",
