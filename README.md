@@ -16,10 +16,11 @@ Use the following command line to install the dependencies of this project:
 
 `npm install`
 
-After installing the dependence, Glup will compile and bundle the corresponding files, and then start Node server using the following command line:
+After installing the dependence, start Glup to compile and bundle the corresponding files firstly, and then start Node server using the following command line:
 
-安装完依赖后，Glup会编译打包相对应的文件，然后使用下面命令行启动Node服务：
+安装完依赖后，首先让Glup去编译打包相对应的文件，然后启动Node服务：
 
+`npm run build`
 `npm run start`
 
 After the Node server has been started, we can visit the website through this Url:
