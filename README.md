@@ -21,6 +21,7 @@ After installing the dependence, start Glup to compile and bundle the correspond
 安装完依赖后，首先让Glup去编译打包相对应的文件，然后启动Node服务：
 
 `npm run build`
+
 `npm run start`
 
 After the Node server has been started, we can visit the website through this Url:
